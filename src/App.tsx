@@ -1,24 +1,15 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import { Container } from "./components/Container/Container";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
 
 function App() {
-  const [pokemon, setPokemon] = useState<any>();
 
-  useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
-      .then((response) => response.json())
-      .then((data) => (
-        console.log(data),
-        setPokemon(data)
-      ))
-      .catch((err) => console.log(err));
-  }, []);
 
   return (
-    <div className="container">
-      <h1>Mathias site</h1>
-      {pokemon && <img src={pokemon.sprites.front_default} alt="" />}
-      
+    <div className="flex flex-1 items-center justify-between text-white gap-2 flex-col h-screen">
+      <Header />
+      <Container />
+      <Footer />
     </div>
   );
 }
