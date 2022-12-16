@@ -1,10 +1,9 @@
 import { LittleLegend } from "../LittleLegend/LittleLegend";
 
-
 export function Container() {
   return (
-    <main className="flex flex-1 w-full items-end justify-center">
-      <div className="mb-10"> 
+    <main className="flex flex-1 w-full items-end justify-center overflow-hidden">
+      <div className="mb-10">
         <LittleLegend
           text={"sobre"}
           image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Spirit_Blossom_Kami_Tier_1.png"
@@ -19,13 +18,14 @@ export function Container() {
         text={"suporte"}
         image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Spirit_Blossom_Yokai_Tier_2.png"
       />
-      <div className="mb-10"> 
-      <LittleLegend
-        text={"alguma coisa"}
-        image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Terra_Inktales_Tier_2.png"
-      />
+      <div className="mb-10">
+        <LittleLegend
+          text={"alguma coisa"}
+          image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Terra_Inktales_Tier_2.png"
+        />
       </div>
 
+      <div className="absolute overflow-hidden w-[10%] p-10 h-[20%] bg-black rounded-full bg-opacity-30 -skew-x-[80deg] skew-y-[20deg] top-96"></div>
     </main>
   );
 }
