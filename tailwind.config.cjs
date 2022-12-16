@@ -15,7 +15,7 @@ module.exports = {
             opacity: 0
           },
           "100%": {
-            transform: "scale(0.2) translate(0%, 0%)",
+            transform: "scale(1) translate(0%, 0%)",
             opacity: 1
           },
         },
