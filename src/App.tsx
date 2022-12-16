@@ -6,7 +6,7 @@ function App() {
 
 
   return (
-    <div className="flex flex-1 items-center justify-between text-white gap-2 flex-col h-screen">
+    <div className="flex flex-1 items-center justify-between text-white gap-2 flex-col h-screen overflow-hidden">
       <Header />
       <Container />
       <Footer />

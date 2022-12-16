@@ -11,7 +11,7 @@ module.exports = {
       keyframes: {
         header: {
           "0%": {
-            transform: "scale(0.1) translate(300%, 20%)",
+            transform: "scale(0.5) translate(300%, 20%)",
             opacity: 0
           },
           "100%": {

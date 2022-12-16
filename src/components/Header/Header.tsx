@@ -1,11 +1,12 @@
 export function Header() {
   return (
-    <header className="flex w-full items-center justify-center mt-2 h-[20%] text-4xl font-black z-10">
+    <header className="flex w-full gap-10 items-center justify-center mt-2 h-[15%] text-4xl font-black z-10 animate-header">
       <img
-        src="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Kombi_2.png"
-        className="animate-header"
+        src="/Kombi_2.png"
+        className=""
         alt=""
       />
+      <h1 className="font-black text-6xl ">Kombi gaming</h1>
     </header>
   );
 }

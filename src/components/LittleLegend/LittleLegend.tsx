@@ -4,8 +4,8 @@ interface ILittleLegend {
 
 export function LittleLegend({image}: ILittleLegend) {
     return (
-        <div>
+        <button className="hover:scale-125 z-20 transition-transform ease-in-out duration-200">
             <img className="animate-littleLegends" src={image} alt="little legend" />
-        </div>
+        </button>
     )
 }
