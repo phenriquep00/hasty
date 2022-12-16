@@ -24,8 +24,6 @@ export function Container() {
           image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Terra_Inktales_Tier_2.png"
         />
       </div>
-
-      <div className="absolute overflow-hidden w-[10%] p-10 h-[20%] bg-black rounded-full bg-opacity-30 -skew-x-[80deg] skew-y-[20deg] top-96"></div>
     </main>
   );
 }
