@@ -1,11 +1,12 @@
 interface ILittleLegend {
   image: string;
   text: string;
+  onClick: () => void;
 }
 
-export function LittleLegend({ image, text }: ILittleLegend) {
+export function LittleLegend({ image, text, onClick }: ILittleLegend) {
   return (
-    <button className="flex flex-col items-center">
+    <button onClick={onClick} className="flex flex-col items-center">
       <img
         className="animate-littleLegends hover:scale-125 z-20 transition-transform ease-in-out duration-200"
         src={image}
