@@ -5,8 +5,6 @@ import { Header } from "./components/Header/Header";
 import { Router } from "./Router";
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <Router />
