@@ -2,8 +2,8 @@ import { LittleLegend } from "../LittleLegend/LittleLegend";
 
 export function Container() {
   return (
-    <main className="flex flex-1 w-full items-end justify-center overflow-hidden">
-      <div className="mb-10">
+    <main className="flex flex-1 w-full items-center justify-center overflow-hidden gap-6 rounded px-6">
+      <div className="mb-10 skew-y-3 skew-x-3">
         <LittleLegend
           onClick={() => {
             window.location.assign("/sobre");
@@ -13,21 +13,27 @@ export function Container() {
         />
       </div>
 
-      <LittleLegend
-        onClick={() => {
-          window.location.assign("/players");
-        }}
-        text={"projetos"}
-        image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Pengu_Tier_2.png"
-      />
-      <LittleLegend
-        onClick={() => {
-          window.location.assign("/doacoes");
-        }}
-        text={"doações"}
-        image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Spirit_Blossom_Yokai_Tier_2.png"
-      />
-      <div className="mb-10">
+      <div className="-mb-10 skew-y-3 skew-x-2">
+        <LittleLegend
+          onClick={() => {
+            window.location.assign("/players");
+          }}
+          text={"projetos"}
+          image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Pengu_Tier_2.png"
+        />
+      </div>
+
+      <div className="-mb-10 -skew-y-3 -skew-x-2">
+        <LittleLegend
+          onClick={() => {
+            window.location.assign("/doacoes");
+          }}
+          text={"doações"}
+          image="https://raw.githubusercontent.com/phenriquep00/hasty/main/public/Featherknight_Spirit_Blossom_Yokai_Tier_2.png"
+        />
+      </div>
+
+      <div className="mb-10 -skew-y-3 -skew-x-3">
         <LittleLegend
           onClick={() => {
             window.location.assign("/redes-sociais");

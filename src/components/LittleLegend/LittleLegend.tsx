@@ -6,14 +6,14 @@ interface ILittleLegend {
 
 export function LittleLegend({ image, text, onClick }: ILittleLegend) {
   return (
-    <button onClick={onClick} className="flex flex-col items-center">
+    <button onClick={onClick} className="flex flex-col items-center border-2 rounded">
       <img
         className="animate-littleLegends hover:scale-125 z-20 transition-transform ease-in-out duration-200"
         src={image}
         alt="little legend"
       />
 
-      <p className="text-2xl capitalize font-semibold underline underline-offset-2">{text}</p>
+      <p className="text-xl -mb-5 bg-white rounded text-black p-2 px-4 capitalize font-semibold">{text}</p>
       
     </button>
   );
