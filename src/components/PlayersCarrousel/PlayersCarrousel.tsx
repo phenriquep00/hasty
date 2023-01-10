@@ -25,7 +25,7 @@ export function PlayersCarrousel() {
       <motion.div
         whileTap={{cursor: "grabbing"}}
         ref={carouselRef}
-        className="cursor-grab overflow-hidden md:pl-[100%] pl-[350%]"
+        className="cursor-grab overflow-hidden md:pl-[100%] pl-[400%]"
       >
         <motion.div
           drag="x"
