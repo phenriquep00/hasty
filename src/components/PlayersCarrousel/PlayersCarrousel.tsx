@@ -1,3 +1,5 @@
+import { PlayerCard } from "../PlayerCard/PlayerCard";
+
 export function PlayersCarrousel() {
     return(
         <div className="flex flex-col justify-around items-center bg-white bg-opacity-70 w-11/12 h-2/3 rounded ">
@@ -5,7 +7,7 @@ export function PlayersCarrousel() {
                 Conheça nossos jogadores
             </h1>
             <p>
-                carrosel com os cards dos jogadores
+                <PlayerCard />
             </p>
         </div>
     )
