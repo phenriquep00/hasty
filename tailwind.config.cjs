@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
+      colors: {
+        brand: "#A970FF"
+      },
       animation: {
         header: "header 2s ease-in-out",
         headerText: "headerText 2s ease-in-out",

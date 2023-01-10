@@ -2,7 +2,7 @@ import { LittleLegend } from "../LittleLegend/LittleLegend";
 
 export function Container() {
   return (
-    <main className="flex flex-1 w-full items-center justify-center overflow-hidden gap-6 rounded px-6">
+    <main className="flex flex-1 w-full items-center justify-center overflow-hidden gap-6 rounded md:px-6 px-1">
       <div className="mb-10 skew-y-3 skew-x-3">
         <LittleLegend
           onClick={() => {
