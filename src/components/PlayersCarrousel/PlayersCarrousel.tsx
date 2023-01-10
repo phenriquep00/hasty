@@ -2,6 +2,7 @@ import { PlayerCard } from "../PlayerCard/PlayerCard";
 import { motion } from "framer-motion";
 import { players } from "./players";
 import { useEffect, useRef, useState } from "react";
+import { Footer } from "../Footer/Footer";
 
 export function PlayersCarrousel() {
   const [width, setWidth] = useState(0);
@@ -23,7 +24,7 @@ export function PlayersCarrousel() {
         Conheça nossos jogadores
       </h1>
       <motion.div
-        whileTap={{cursor: "grabbing"}}
+        whileTap={{ cursor: "grabbing" }}
         ref={carouselRef}
         className="cursor-grab overflow-hidden md:pl-[100%] pl-[400%]"
       >
@@ -41,8 +42,11 @@ export function PlayersCarrousel() {
             />
           ))}
         </motion.div>
-        <div></div>
       </motion.div>
+
+      <div className="absolute bottom-0 w-full">
+        <Footer />
+      </div>
     </div>
   );
 }
